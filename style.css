@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 0;
+    .para{
+        margin: 0 0 2em 0;
+        font-weight: bold;
+        /* color: black; */
+    }
+    .image{
+        width: 183px;
+        background-image: url("https://ew.com/thmb/VHXYzvE5Ot6jG61akYF46T5TN6w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/teletubbies-sun-baby-101223-2000-2b1bf9ae457d4c2daea0061ddc3cafd6.jpg");
+        height: 183px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgba(227, 214, 29, 0.642);
+        border-radius: 100%;
+        position: relative;
+        .noti{
+            position: absolute;
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            text-align: center;
+            top: 85%;
+            left: 70%;
+            p {
+                margin: .1em 0 0 0;
+            }
+        }
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 2em 0 0 0;
+        input{
+            padding: .3em .6em;
+            border-radius: .5em;
+            border: none;
+            background-color: rgb(243, 243, 243);
+            margin: 0 2em;
+        }
+        button{
+            padding: .2em .5em;
+            border: 1px solid rgb(48, 48, 48);
+            border-radius: .5em;
+            margin: 0 1em;
+        }
+        
+    }   
+}
+.linktoProfile{
+     color: black;
+}
+.linktoProfile:hover{
+    color: rgb(109, 176, 238);
+    text-decoration: underline;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+    & p{
+        font-size: 2vh;
+    }
+    table{
+        margin: 2em 0 0 0;
+        width: 100%;
+        border-collapse: collapse;
+        td, th{
+            text-align: center
+        }
+    }
+}

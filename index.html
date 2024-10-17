@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="para">
+            <a target="_blank" href="https://www.instagram.com/sun.niti__j" class="linktoProfile">
+                <p id="username"><b>นิธิโรจน์ สรรพธนวัฒน์ 67070091</b></p>
+            </a>
+        </div>
+        <div id="profile" class="image">
+            <div class="noti">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="puser">
+                <p>Set the Username</p>
+            </div>
+            <input id="inputUsername" placeholder="Enter username" type="text">
+            <button onclick="setUsername()">SET</button>
+        </div>
+        <div class="box">
+            <div class="puser">
+                <p>Set the profile image URL</p>
+            </div>
+            <input id="inputImage" placeholder="Enter Image Url" type="text">
+            <button onclick="setImage()">SET</button>
+        </div>
+        <div class="phone">
+            <p><b>Phone Number List</b></p>
+            <div class="box">
+                <input id="inputName" placeholder="Name" type="text">
+                <input id="inputPhone" placeholder="Tel" type="text">
+                <button onclick="addName()">ADD</button>
+                <button onclick="saveCSV()">EXPORT</button>
+            </div>
+            <table id="ta">
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Tel.</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
